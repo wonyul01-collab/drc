@@ -1,0 +1,1588 @@
+
+Gemini
+파일에 관해 물어보세요.
+Summarize this folder
+Analyze each file In this folder analyze each file
+What can Gemini do with folders in Google Drive, what can Gemini do with folders
+Workspace의 Gemini 기능은 인물 등에 관한 정보를 제공할 때 실수를 할 수 있습니다. 자세히 알아보기
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>복지용구 신규급여결정신청 업무 매뉴얼 | DR Company</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0f1c2e;
+  --navy-light: #1a2d45;
+  --blue: #1a56db;
+  --blue-mid: #2563eb;
+  --blue-light: #3b82f6;
+  --cyan: #06b6d4;
+  --cyan-light: #67e8f9;
+  --amber: #f59e0b;
+  --amber-light: #fcd34d;
+  --red: #ef4444;
+  --green: #10b981;
+  --white: #ffffff;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-500: #64748b;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --border: #e2e8f0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--gray-50);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ── HEADER ── */
+.site-header {
+  background: var(--navy);
+  color: white;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-badge {
+  background: var(--blue);
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+.header-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+.header-nav {
+  display: flex;
+  gap: 4px;
+}
+.header-nav a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.header-nav a:hover {
+  color: white;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--navy);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(26,86,219,0.35) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 50%, rgba(6,182,212,0.15) 0%, transparent 60%);
+  color: white;
+  padding: 72px 32px 80px;
+  text-align: center;
+}
+.hero-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--cyan-light);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+.hero h1 span {
+  background: linear-gradient(135deg, var(--blue-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  max-width: 600px;
+  margin: 0 auto 36px;
+  line-height: 1.8;
+}
+.hero-meta {
+  display: inline-flex;
+  gap: 24px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
+.hero-meta b { color: white; font-weight: 600; }
+
+/* ── LAYOUT ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── SECTION TITLES ── */
+.section {
+  padding: 64px 0;
+}
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.section-sub {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+/* ── GOLDEN RULES ── */
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 0;
+}
+.rule-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 22px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.rule-card:hover {
+  box-shadow: 0 8px 32px rgba(26,86,219,0.12);
+  transform: translateY(-2px);
+}
+.rule-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--card-accent, var(--blue));
+}
+.rule-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.rule-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.rule-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ── DDAY MAP ── */
+.dday-section {
+  background: var(--navy);
+  color: white;
+  padding: 72px 0;
+  position: relative;
+  overflow: hidden;
+}
+.dday-section::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(26,86,219,0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+.dday-section .section-label { color: var(--cyan-light); }
+.dday-section .section-title { color: white; }
+.dday-section .section-sub { color: rgba(255,255,255,0.55); }
+
+.dday-legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+.legend-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.timeline {
+  position: relative;
+  padding-bottom: 16px;
+}
+.timeline-spine {
+  position: absolute;
+  left: 110px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: rgba(255,255,255,0.1);
+}
+.timeline-spine::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, var(--blue), var(--cyan), transparent);
+  opacity: 0.6;
+}
+
+.tl-group {
+  margin-bottom: 8px;
+}
+.tl-phase-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--amber);
+  text-transform: uppercase;
+  padding: 12px 0 6px 140px;
+}
+
+.tl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.tl-dday {
+  width: 110px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 24px;
+  padding-top: 12px;
+}
+.tl-dday-badge {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.tl-node {
+  position: relative;
+  width: 2px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 14px;
+  z-index: 1;
+}
+.tl-dot {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 2px solid;
+  flex-shrink: 0;
+  margin-left: -6px;
+  transition: transform 0.2s;
+}
+.tl-row:hover .tl-dot { transform: scale(1.4); }
+
+.tl-content {
+  flex: 1;
+  margin-left: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.tl-row:hover .tl-content {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.18);
+}
+.tl-step-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tl-step-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  background: rgba(255,255,255,0.12);
+  padding: 1px 7px;
+  border-radius: 4px;
+  color: rgba(255,255,255,0.6);
+}
+.tl-step-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+.tl-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* phase colors */
+.phase-prep { --ph: rgba(245,158,11,0.15); --ph-border: rgba(245,158,11,0.3); }
+.phase-exec { --ph: rgba(26,86,219,0.15); --ph-border: rgba(59,130,246,0.3); }
+.phase-final { --ph: rgba(16,185,129,0.15); --ph-border: rgba(16,185,129,0.3); }
+
+/* D-day badge colors */
+.badge-far { background: rgba(245,158,11,0.15); color: var(--amber-light); }
+.badge-mid { background: rgba(26,86,219,0.2); color: #93c5fd; }
+.badge-near { background: rgba(16,185,129,0.15); color: #6ee7b7; }
+.badge-day { background: rgba(239,68,68,0.2); color: #fca5a5; }
+
+.dot-far { background: var(--amber); border-color: var(--amber); }
+.dot-mid { background: var(--blue-light); border-color: var(--blue-light); }
+.dot-near { background: var(--green); border-color: var(--green); }
+.dot-day { background: var(--red); border-color: var(--red); }
+
+.tag-doc { background: rgba(99,102,241,0.2); color: #a5b4fc; }
+.tag-price { background: rgba(245,158,11,0.2); color: var(--amber-light); }
+.tag-product { background: rgba(6,182,212,0.2); color: var(--cyan-light); }
+.tag-online { background: rgba(16,185,129,0.2); color: #6ee7b7; }
+.tag-check { background: rgba(239,68,68,0.2); color: #fca5a5; }
+
+/* ── DETAIL CARDS ── */
+.details-section {
+  background: white;
+  padding: 72px 0;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+.detail-card {
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.detail-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.detail-card-header {
+  padding: 20px 22px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.detail-card-icon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.detail-card-header-text {}
+.detail-card-step {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.detail-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.detail-card-body {
+  padding: 18px 22px;
+}
+.detail-card-body p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.detail-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.detail-list li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.6;
+}
+.detail-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-size: 11px;
+  top: 2px;
+}
+.detail-list li b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.warn-box {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: #92400e;
+  display: flex;
+  gap: 8px;
+}
+.warn-box-icon { flex-shrink: 0; font-size: 14px; }
+
+.tip-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: #14532d;
+  display: flex;
+  gap: 8px;
+}
+.tip-box-icon { flex-shrink: 0; font-size: 14px; }
+
+/* ── CHECKLIST ── */
+.checklist-section {
+  background: var(--gray-50);
+  padding: 72px 0;
+}
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.checklist-group {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.checklist-group-header {
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.checklist-group-body {
+  padding: 14px 20px;
+}
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--gray-100);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.checklist-item:last-child { border-bottom: none; }
+.checklist-item:hover { background: var(--gray-50); border-radius: 6px; }
+.check-box {
+  width: 18px; height: 18px;
+  border: 2px solid var(--gray-300);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  transition: all 0.15s;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px;
+  color: transparent;
+}
+.checklist-item.checked .check-box {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+}
+.check-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.checklist-item.checked .check-label {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+.checklist-progress {
+  height: 4px;
+  background: var(--gray-100);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 14px;
+}
+.checklist-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+.checklist-count {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+/* ── PITFALLS ── */
+.pitfalls-section {
+  background: white;
+  padding: 72px 0;
+}
+.pitfalls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+.pitfall-card {
+  border-radius: 12px;
+  padding: 20px 22px;
+  border: 1.5px solid;
+}
+.pitfall-card.bad {
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+.pitfall-card.bad .pitfall-label {
+  color: #be123c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.pitfall-card.bad .pitfall-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #881337;
+  margin-bottom: 8px;
+}
+.pitfall-card.bad .pitfall-desc {
+  font-size: 13px;
+  color: #9f1239;
+  line-height: 1.6;
+}
+.pitfall-card.good {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+.pitfall-card.good .pitfall-label {
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.pitfall-card.good .pitfall-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 8px;
+}
+.pitfall-card.good .pitfall-desc {
+  font-size: 13px;
+  color: #166534;
+  line-height: 1.6;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 36px 32px;
+  font-size: 13px;
+}
+footer b { color: rgba(255,255,255,0.75); }
+
+/* ── ACCORDION ── */
+.accordion-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+}
+.accordion-body {
+  display: none;
+  margin-top: 12px;
+}
+.accordion-body.open { display: block; }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .hero { padding: 48px 20px 56px; }
+  .hero-meta { flex-direction: column; gap: 10px; font-size: 12px; padding: 12px 20px; }
+  .header-nav { display: none; }
+  .timeline-spine { left: 80px; }
+  .tl-dday { width: 80px; }
+  .dday-section, .details-section, .checklist-section, .pitfalls-section { padding: 48px 0; }
+  .section { padding: 48px 0; }
+}
+
+/* print */
+@media print {
+  .site-header { position: static; }
+  .tl-content { background: #f8fafc !important; border-color: #e2e8f0 !important; }
+  .dday-section { background: white !important; color: black !important; }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fadeInUp 0.5s ease both;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-badge">DR Company</span>
+      <span class="header-title">복지용구 신규급여결정신청 업무 매뉴얼</span>
+    </div>
+    <nav class="header-nav">
+      <a href="#golden-rules">핵심 원칙</a>
+      <a href="#dday-map">D-Day 맵</a>
+      <a href="#detail-guide">단계별 가이드</a>
+      <a href="#checklist">체크리스트</a>
+      <a href="#pitfalls">주의사항</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Standard Operating Procedure</p>
+    <h1>복지용구<br><span>신규급여결정신청</span> 업무 매뉴얼</h1>
+    <p class="hero-desc">
+      반복 실수 없이, 누가 담당하더라도 동일한 품질로.<br>
+      실제 업무 경험을 바탕으로 정리한 단계별 실전 가이드입니다.
+    </p>
+    <div class="hero-meta">
+      <span>📅 <b>기준일</b> 2026년 3월</span>
+      <span>📋 <b>적용 범위</b> 신규급여결정신청 · 제품심사 · 공장심사</span>
+      <span>🎯 <b>목표</b> 접수 시작 2주 전 전체 완료</span>
+    </div>
+  </div>
+</section>
+
+<!-- GOLDEN RULES -->
+<section class="section" id="golden-rules">
+  <div class="container">
+    <p class="section-label">Golden Rules</p>
+    <h2 class="section-title">5가지 핵심 원칙</h2>
+    <p class="section-sub">업무를 시작하기 전, 이 다섯 가지를 반드시 먼저 확인하세요.</p>
+
+    <div class="rules-grid">
+      <div class="rule-card" style="--card-accent: #f59e0b;">
+        <div class="rule-icon">📌</div>
+        <div class="rule-title">가격부터 정한다</div>
+        <div class="rule-desc">목표 판매가격이 확정되어야 원가 구조, 노무 시간, 공정 영상, 계산서 금액이 모두 연동된다. 가격 없이 시작하면 모든 것이 뒤에서 흔들린다.</div>
+      </div>
+      <div class="rule-card" style="--card-accent: #2563eb;">
+        <div class="rule-icon">📖</div>
+        <div class="rule-title">지침을 먼저 읽는다</div>
+        <div class="rule-desc">협회 고시·기준 지침·단체 표준을 제품 기획 시작 전 반드시 숙지. 추정이나 타사 제품 참고로 진행하면 중간에 전체가 틀어진다.</div>
+      </div>
+      <div class="rule-card" style="--card-accent: #06b6d4;">
+        <div class="rule-icon">⏰</div>
+        <div class="rule-title">2주 전 완료가 기준</div>
+        <div class="rule-desc">접수 기간 시작일 기준 2주 전에 모든 서류 1차 완료. 마감일에 몰리면 건보 서버 과부하로 업로드 오류가 반복 발생한다.</div>
+      </div>
+      <div class="rule-card" style="--card-accent: #10b981;">
+        <div class="rule-icon">📦</div>
+        <div class="rule-title">앞에서 다 준비한다</div>
+        <div class="rule-desc">서류, 자재 정보, 공정 시간은 모두 앞단에서 선행 정의. 뒤에서 물어보고 수정하는 구조를 없앤다. 뒷단은 확인과 업로드만 남겨야 한다.</div>
+      </div>
+      <div class="rule-card" style="--card-accent: #8b5cf6;">
+        <div class="rule-icon">✅</div>
+        <div class="rule-title">체크리스트로 검증한다</div>
+        <div class="rule-desc">진행 여부를 기억이 아닌 체크리스트로 관리. 특히 변경·신규 추가 지침은 별도 이슈 리스트에 포함시켜 누락을 방지한다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DDAY MAP -->
+<section class="dday-section" id="dday-map">
+  <div class="container">
+    <p class="section-label">D-Day Process Map</p>
+    <h2 class="section-title">D-Day 기준 전체 프로세스 맵</h2>
+    <p class="section-sub">접수 시작일(D-Day)을 기준으로 각 단계를 역산한 타임라인입니다. 각 항목을 클릭하면 상세 내용을 확인할 수 있습니다.</p>
+
+    <div class="dday-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#f59e0b;"></div> 사전 준비 단계 (D-90~D-30)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6;"></div> 서류 작성 단계 (D-30~D-14)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#10b981;"></div> 마무리·검토 단계 (D-14~D-3)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ef4444;"></div> 접수 실행 단계 (D-3~D-2)</div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-spine"></div>
+
+      <!-- PHASE 1: 사전 준비 -->
+      <div class="tl-group">
+        <div class="tl-phase-label">Phase 1 — 사전 준비 단계</div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-far">D-90 이전</span></div>
+          <div class="tl-node"><div class="tl-dot dot-far"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 01</span> 기준 지침 및 고시 스터디</div>
+            <div class="tl-step-desc">협회 고시, 단체 표준, 건보 고시 확인 → 제품 구성 기준(수량·구성품), 포장 기준, 촬영 지침 파악</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📄 문서 확인</span>
+              <span class="tl-tag tag-check">⚠️ 필수 선행</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">확인해야 할 항목</b><br>
+                • 제품 1세트 구성 기준 (예: 팬티 1개 + 패드 몇 개가 1세트인지)<br>
+                • 포장재 기준 (박스 사이즈, 재질, 표시 기재 사항)<br>
+                • 공정 동영상 촬영 지침 (카메라 고정 여부, 시계 위치, 연속 촬영 기준)<br>
+                • 신청 서류 목록 및 양식 (최신 버전 확인, 변경 사항 체크)<br><br>
+                <b style="color:#fcd34d;">⚠️ 실패 사례:</b> 시중 판매 제품을 보고 구성을 추정해 진행했다가 기준과 달라 전체 작업이 틀어진 사례 발생.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-far">D-90 이전</span></div>
+          <div class="tl-node"><div class="tl-dot dot-far"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 02</span> 목표 가격 책정 및 원가 구조 시뮬레이션</div>
+            <div class="tl-step-desc">판매 목표가 설정 → 원부자재 단가, 노무비, 외주 가공비 역산 → 전체 원가 구조 확정</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-price">💰 가격 책정</span>
+              <span class="tl-tag tag-check">⚠️ 필수 1순위</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">가격 책정 방법</b><br>
+                • 시장 조사 → 경쟁 제품 가격대 파악<br>
+                • 최종 타깃 가격 설정 후 약 20% 버프를 얹어 신청 가격 결정<br>
+                • 신청 가격 기준으로 원가 역산: 원부자재 단가 + 노무비(시간 × 단가) + 외주 가공비 + 포장재<br>
+                • 이 시뮬레이션이 완료되어야 계산서, 명세서 금액이 확정됨<br><br>
+                <b style="color:#fcd34d;">⚠️ 실패 사례:</b> 가격 책정이 늦어져 공정 영상 시간을 뒤에서 강제 조정, 세금계산서 재발행하는 상황 반복 발생.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-far">D-90 이전</span></div>
+          <div class="tl-node"><div class="tl-dot dot-far"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 03</span> 접수 타임라인 수립 (역산)</div>
+            <div class="tl-step-desc">접수 시작 예정일을 D-Day로 설정 → 각 단계별 완료 기한을 역산하여 내부 일정표 확정</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📅 일정 관리</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">표준 일정 기준</b><br>
+                • D-60: 자재 발주 및 비교 견적 착수<br>
+                • D-45: 제품 샘플 완성 목표<br>
+                • D-30: 모든 증빙 서류 1차 준비 완료<br>
+                • D-14: 서류 전체 1차 완료<br>
+                • D-7: 크로스 체크 및 보완 완료<br>
+                • D-2~3: 온라인 등록
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-far">D-60</span></div>
+          <div class="tl-node"><div class="tl-dot dot-far"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 04</span> 자재 발주 및 비교 견적 확보</div>
+            <div class="tl-step-desc">자재 단가 상위 5개 항목 비교 견적 3개 업체 이상 확보 / 외주 가공비 비교 견적 3개 업체 확보 / 자재 발주 시 규격·재질·사양·사진 포함 명세서 요청</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📄 증빙 서류</span>
+              <span class="tl-tag tag-price">💰 비교 견적</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">비교 견적 기준</b><br>
+                • 자재 단가 상위 5개 항목 각각 3개 업체 견적 필수<br>
+                • 외주 가공비도 3개 업체 (당사 포함 총 3개)<br>
+                • 자재 발주 시 업체에 요청할 내용: 상호명, 사업자등록번호, 재질, 규격, 사이즈, 사양, 자재 사진<br>
+                • 거래명세서·세금계산서 수령 시 이 정보가 포함되도록 사전 룰 세팅<br><br>
+                <b style="color:#fcd34d;">⚠️ 실패 사례:</b> 외주 가공비 비교 견적 누락, 외주 가공비 자체 누락으로 사후 추가 준비하면서 전체 일정 지연.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-far">D-45</span></div>
+          <div class="tl-node"><div class="tl-dot dot-far"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 05</span> 제품 샘플 완성 및 사양 확정</div>
+            <div class="tl-step-desc">제품 샘플 완성 → 실물 확인 (중량, 재질, 치수 실측) → 제품 설명서·특장점 내용 확정 → 포장 박스 사이즈·재질 확정</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-product">🔧 제품 준비</span>
+              <span class="tl-tag tag-check">⚠️ 마일스톤</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">샘플 확정 시 확인 항목</b><br>
+                • 중량, 치수 직접 실측 (명세서 기재값과 일치 여부 확인)<br>
+                • 재질 확인 (업체에 소재 증빙 요청)<br>
+                • 제품 설명서 내용 최종 확정 (샘플 확인 후 변경사항 반영)<br>
+                • 포장 박스 사이즈·재질 확정 (기준 지침의 포장 기준 준수 여부 확인)<br><br>
+                <b style="color:#fcd34d;">⚠️ 실패 사례:</b> 샘플이 늦게 도착해 실물 확인 결과 중량 차이 발생, 설명서·영상 전면 재작업.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-far">D-60~30</span></div>
+          <div class="tl-node"><div class="tl-dot dot-far"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 06</span> 판매 실적 관리 (2개월 전 판매 완료)</div>
+            <div class="tl-step-desc">접수 예정월 기준 2개월 전까지 판매 실적 완료 / 판매 내역 정리도 동 시점에 완료하여 사전 준비 상태로 유지</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📄 판매 실적</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">판매 내역서 관리 기준</b><br>
+                • 접수 예정월 기준 전전달(2개월 전)까지 판매 실적 확보<br>
+                • 판매 내역 엑셀 정리도 해당 시점에 사전 완료<br>
+                • 기준 변경 여부를 접수 전 반드시 최신 고시로 재확인<br><br>
+                <b style="color:#fcd34d;">⚠️ 주의:</b> 기준이 과도기적으로 변경 중인 경우가 있으므로 반드시 최신 기준 확인 필수.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 2: 서류 작성 -->
+      <div class="tl-group">
+        <div class="tl-phase-label">Phase 2 — 서류 작성 단계</div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-mid">D-45~30</span></div>
+          <div class="tl-node"><div class="tl-dot dot-mid"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 07</span> 공급계약서 작성 및 날인</div>
+            <div class="tl-step-desc">공급계약서 양식 확인 → 작성 → 날인 → 보관 (2026년 상반기 신규 추가 서류)</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📄 오프라인 서류</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">공급계약서 주의사항</b><br>
+                • 2026년 상반기 신규 추가 — 양식을 최신 버전으로 반드시 확인<br>
+                • 날인 일정 고려하여 충분한 시간 여유를 두고 준비<br>
+                • 내용 오기재 시 재작성·재날인 필요하므로 초안 검토 후 날인
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-mid">D-30</span></div>
+          <div class="tl-node"><div class="tl-dot dot-mid"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 08</span> 증빙 서류 전체 준비 완료</div>
+            <div class="tl-step-desc">자재별 거래명세서·세금계산서 / 자재 사진 촬영 / 비교 견적서 3개 업체 / 외주 가공비 증빙 / 공급계약서 — 모든 오프라인 증빙 서류 완비</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📄 증빙 서류</span>
+              <span class="tl-tag tag-check">⚠️ 마일스톤</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">필수 서류 목록</b><br>
+                ① 자재별 거래명세서 (자재별 각각)<br>
+                ② 자재별 세금계산서 (자재별 각각)<br>
+                ③ 비교 견적서 — 자재 단가 상위 5개 × 3개 업체<br>
+                ④ 비교 견적서 — 외주 가공비 × 3개 업체<br>
+                ⑤ 자재 사진 (자재별 각각)<br>
+                ⑥ 외주 가공비 세금계산서 및 거래명세서<br>
+                ⑦ 공급계약서 (날인 완료)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-mid">D-30~20</span></div>
+          <div class="tl-node"><div class="tl-dot dot-mid"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 09</span> 제조 공정도 작성 및 공정 시간 정의</div>
+            <div class="tl-step-desc">가격 기준 노무비 역산 → 공정별 작업 시간 정의 → 제조 공정도 작성 → 촬영 시간 기준 확정</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-product">🔧 공정 관리</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">제조 공정도 작성 방법</b><br>
+                • 책정된 가격 기준으로 노무비 총액 산출<br>
+                • 공정별 작업 시간 배분 (합계가 노무비 계산 시간과 일치하도록)<br>
+                • 제조 공정도 각 단계에 시간 기재<br>
+                • 이 시간이 공정 동영상 촬영 기준이 됨 (촬영 시 맞춰서 진행)<br><br>
+                <b style="color:#67e8f9;">💡 팁:</b> 공정도 작성 시 각 공정별 인원수, 작업 방법, 필요 도구도 함께 기재해두면 영상 촬영 시 혼선이 없다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-mid">D-25~20</span></div>
+          <div class="tl-node"><div class="tl-dot dot-mid"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 10</span> 공정 동영상 촬영 (지침 준수)</div>
+            <div class="tl-step-desc">촬영 지침 사전 공유 → 담당자 숙지 확인 → 지침에 따라 촬영 → 촬영 후 지침 준수 여부 즉시 확인</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-product">🎬 동영상</span>
+              <span class="tl-tag tag-check">⚠️ 지침 준수</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">촬영 지침 핵심 체크</b><br>
+                • 시계(초침 표시)는 화면 오른쪽 하단에 위치<br>
+                • 카메라는 고정 상태 유지 (들고 다니며 촬영 금지)<br>
+                • 작업 중 화면 중단 없이 연속 촬영<br>
+                • 각 공정별 지정 시간에 맞춰 촬영<br>
+                • 촬영 완료 후 즉시 영상 확인 → 시계 노출 여부, 카메라 고정 여부 체크<br><br>
+                <b style="color:#fcd34d;">⚠️ 실패 사례:</b> 시계 없이 촬영, 카메라 이동하며 촬영, 작업 중간에 끊고 재촬영 — 기준 미준수로 재촬영 가능성 발생.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-mid">D-25~15</span></div>
+          <div class="tl-node"><div class="tl-dot dot-mid"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 11</span> 재무 자료 준비 및 엑셀 입력</div>
+            <div class="tl-step-desc">홈택스 PDF 다운로드 → PDF→엑셀 변환(AI·변환 프로그램 활용) → 엑셀 시트 입력 → 검증 함수로 오류 확인</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">💼 재무 자료</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">재무 자료 입력 방법</b><br>
+                • 홈택스에서 PDF 형태로 다운로드<br>
+                • PDF→엑셀 변환 프로그램 또는 AI(Claude 등)로 데이터 추출 → 오류 최소화<br>
+                • 변환된 데이터를 엑셀에 붙여넣기 후 IF/EXACT 함수로 원본 대조 검증<br>
+                • 수기 타이핑 입력은 지양 (오타 발생 가능성 높음)<br><br>
+                <b style="color:#67e8f9;">💡 팁:</b> 엑셀 시트를 미리 설계할 때 입력 셀 옆에 검증 컬럼을 만들어두면 입력 즉시 오류를 확인할 수 있다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-mid">D-20~14</span></div>
+          <div class="tl-node"><div class="tl-dot dot-mid"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 12</span> 자재 현황표 및 전체 서류 입력</div>
+            <div class="tl-step-desc">자재 현황표 입력 (품목명·재질·무게·사양·구입처·세금계산서 번호·단가·수량) / 제품 설명서 최종 확정 / 건보 엑셀 양식 전체 입력</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-doc">📊 데이터 입력</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">자재 현황표 입력 항목</b><br>
+                • 제품 품목명 / 재질 / 무게 / 사양<br>
+                • 구입처 (상호명, 사업자등록번호)<br>
+                • 세금계산서 번호 / 총 공급가액<br>
+                • 최종 구매일 / 단가 / 수량<br><br>
+                <b style="color:#67e8f9;">💡 팁:</b> 자재 발주 시 업체에서 받은 명세서에 이 정보가 포함되도록 사전 요청해두면 입력 중 전화 확인 없이 바로 작업 가능.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 3: 마무리 -->
+      <div class="tl-group">
+        <div class="tl-phase-label">Phase 3 — 마무리·검토 단계</div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-near">D-14</span></div>
+          <div class="tl-node"><div class="tl-dot dot-near"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 13</span> 전체 서류 1차 완료 기준점</div>
+            <div class="tl-step-desc">모든 서류 및 입력 데이터 1차 완료 목표 — 이 시점 이후부터는 검토와 보완만 진행</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-check">✅ 마일스톤</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">D-14 기준점 체크리스트</b><br>
+                □ 모든 오프라인 증빙 서류 완비<br>
+                □ 건보 엑셀 양식 전체 입력 완료<br>
+                □ 자재 현황표 입력 완료<br>
+                □ 제조 공정도 완성<br>
+                □ 공정 동영상 촬영 완료 및 확인<br>
+                □ 재무 자료 입력 완료<br>
+                □ 판매 내역서 준비 완료
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-near">D-14~7</span></div>
+          <div class="tl-node"><div class="tl-dot dot-near"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 14</span> 내부 크로스 체크</div>
+            <div class="tl-step-desc">담당자 교차 검토 → 누락 항목 확인 → 지침 준수 여부 재검증 → 오류 수정</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-check">🔍 검토</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">크로스 체크 포인트</b><br>
+                • 서류 누락 없는지 체크리스트 대조<br>
+                • 입력 데이터 원본 대조 (세금계산서 번호, 공급가액 등)<br>
+                • 공정 영상 지침 준수 여부 재확인<br>
+                • 가격 구조 일관성 확인 (신청가 ↔ 원가 구조)<br>
+                • 지침 변경 사항 반영 여부 확인
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-near">D-7</span></div>
+          <div class="tl-node"><div class="tl-dot dot-near"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 15</span> 최종 보완 완료 및 동결</div>
+            <div class="tl-step-desc">보완 사항 반영 완료 → 이후 추가 수정 없이 동결 → 온라인 업로드 준비 상태 유지</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-check">✅ 동결</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 4: 접수 -->
+      <div class="tl-group">
+        <div class="tl-phase-label">Phase 4 — 접수 실행 단계</div>
+
+        <div class="tl-row" onclick="toggleDetail(this)">
+          <div class="tl-dday"><span class="tl-dday-badge badge-day">D+2~3</span></div>
+          <div class="tl-node"><div class="tl-dot dot-day"></div></div>
+          <div class="tl-content">
+            <div class="tl-step-title"><span class="tl-step-number">STEP 16</span> 건보 온라인 시스템 업로드 및 접수</div>
+            <div class="tl-step-desc">접수 기간 시작 2~3일차에 업로드 (마감일 절대 금지) → 재무제표 직접 입력 → 파일 한 개씩 업로드 → 접수 확인</div>
+            <div class="tl-tags">
+              <span class="tl-tag tag-online">🌐 온라인 접수</span>
+              <span class="tl-tag tag-check">⚠️ 마감일 금지</span>
+            </div>
+            <div class="accordion-body">
+              <div style="margin-top:12px; padding:12px; background:rgba(255,255,255,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7;">
+                <b style="color:white;">온라인 업로드 주의사항</b><br>
+                • 접수 기간 2~3일차에 등록 (마감일 등록 시 서버 과부하로 오류 반복)<br>
+                • 재무제표: 시스템 내 직접 입력 항목 별도 존재 → 미리 데이터 준비<br>
+                • 파일 업로드: 한 개씩 업로드하는 방식 → 파일 순서 미리 정리<br>
+                • 업로드 중 오류 발생 시 건보 콜센터 연락 (임의 재시도 전 확인)<br>
+                • 접수 완료 후 접수 번호 및 결과 화면 캡처 보관<br><br>
+                <b style="color:#fcd34d;">⚠️ 실패 사례:</b> 마감일에 서버 과부하로 업로드 오류 반복, 건보에서 필수 서류만 우선 제출 안내받은 상황 발생.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /timeline -->
+  </div>
+</section>
+
+<!-- DETAIL GUIDE -->
+<section class="details-section" id="detail-guide">
+  <div class="container">
+    <p class="section-label">Detailed Guide</p>
+    <h2 class="section-title">핵심 업무 상세 가이드</h2>
+    <p class="section-sub">자주 실수하거나 처음 담당자가 놓치기 쉬운 항목을 상세하게 안내합니다.</p>
+
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <div class="detail-card-header">
+          <div class="detail-card-icon" style="background:#fef3c7;">💰</div>
+          <div class="detail-card-header-text">
+            <div class="detail-card-step">STEP 02</div>
+            <div class="detail-card-title">가격 책정과 원가 시뮬레이션</div>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <p>모든 서류의 기준점이 되는 핵심 작업입니다. 이 단계를 건너뛰거나 미루면 이후 모든 작업이 뒤에서 수정을 반복하게 됩니다.</p>
+          <ul class="detail-list">
+            <li><b>목표 판매가 설정:</b> 시장 조사 후 타깃 가격 확정</li>
+            <li><b>신청 가격:</b> 타깃 가격 × 1.2 (약 20% 버프) 이상으로 설정</li>
+            <li><b>원가 역산:</b> 원부자재 + 노무비(시간 × 시간당 단가) + 외주 가공비 + 포장재</li>
+            <li><b>계산서 금액:</b> 원가 구조 확정 후 그에 맞게 발행</li>
+          </ul>
+          <div class="warn-box">
+            <span class="warn-box-icon">⚠️</span>
+            가격 확정 없이 계산서를 먼저 발행하면 나중에 전체를 다시 해야 합니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-card-header">
+          <div class="detail-card-icon" style="background:#dbeafe;">📄</div>
+          <div class="detail-card-header-text">
+            <div class="detail-card-step">STEP 04</div>
+            <div class="detail-card-title">비교 견적 준비 가이드</div>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <p>비교 견적은 자재와 외주 가공비 모두 3개 업체 이상이 필요합니다. 사전에 충분한 시간을 두고 업체를 섭외해야 합니다.</p>
+          <ul class="detail-list">
+            <li><b>자재 비교 견적:</b> 단가 상위 5개 자재 × 3개 업체 견적 필수</li>
+            <li><b>외주 가공비:</b> 당사 포함 총 3개 업체 견적</li>
+            <li><b>견적서 형식:</b> 업체명, 사업자번호, 품목, 수량, 단가, 발행일 포함</li>
+            <li><b>선정 근거:</b> 비교 후 선정한 업체와 이유를 간략히 기재</li>
+          </ul>
+          <div class="tip-box">
+            <span class="tip-box-icon">💡</span>
+            업체별 비교 견적서를 한 폴더에 정리하고 비교표를 엑셀로 만들어두면 서류 제출 시 편리합니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-card-header">
+          <div class="detail-card-icon" style="background:#d1fae5;">🎬</div>
+          <div class="detail-card-header-text">
+            <div class="detail-card-step">STEP 10</div>
+            <div class="detail-card-title">공정 동영상 촬영 체크리스트</div>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <p>촬영 지침을 숙지하지 않고 촬영하면 기준 미준수로 재촬영이 필요할 수 있습니다. 촬영 전 반드시 아래 항목을 확인하세요.</p>
+          <ul class="detail-list">
+            <li><b>시계 위치:</b> 초침이 보이는 시계를 화면 오른쪽 하단에 고정 배치</li>
+            <li><b>카메라:</b> 고정 거치 상태에서 촬영 (이동하며 촬영 금지)</li>
+            <li><b>연속 촬영:</b> 작업 중간 끊김 없이 처음부터 끝까지 연속</li>
+            <li><b>촬영 시간:</b> 공정도에 기재된 시간에 맞춰 진행</li>
+            <li><b>촬영 후 즉시 확인:</b> 시계 노출 여부, 카메라 고정 여부 체크</li>
+          </ul>
+          <div class="warn-box">
+            <span class="warn-box-icon">⚠️</span>
+            작업자에게 왜 찍어야 하는지, 어떻게 찍어야 하는지 사전에 설명하고 협조를 구하세요.
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-card-header">
+          <div class="detail-card-icon" style="background:#ede9fe;">💼</div>
+          <div class="detail-card-header-text">
+            <div class="detail-card-step">STEP 11</div>
+            <div class="detail-card-title">재무 자료 입력 자동화</div>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <p>홈택스에서 받은 PDF를 수기로 타이핑하면 오류가 발생합니다. AI 또는 변환 프로그램을 활용해 자동화하세요.</p>
+          <ul class="detail-list">
+            <li><b>PDF 변환:</b> PDF→엑셀 변환 프로그램 또는 Claude AI에 PDF 업로드 후 데이터 추출</li>
+            <li><b>검증 방법:</b> 입력 완료 후 엑셀에서 EXACT 함수로 원본과 대조</li>
+            <li><b>검증 컬럼:</b> 입력 데이터 셀 옆에 =IF(EXACT(입력셀, 기준셀), "OK", "오류") 형태로 설계</li>
+            <li><b>오류 발생 시:</b> 원본 확인 후 수정, 재검증</li>
+          </ul>
+          <div class="tip-box">
+            <span class="tip-box-icon">💡</span>
+            엑셀 시트 템플릿을 미리 만들어두고 매번 재사용하면 작업 시간을 크게 줄일 수 있습니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-card-header">
+          <div class="detail-card-icon" style="background:#fce7f3;">🌐</div>
+          <div class="detail-card-header-text">
+            <div class="detail-card-step">STEP 16</div>
+            <div class="detail-card-title">건보 온라인 시스템 업로드</div>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <p>온라인 업로드는 마감일 절대 금지입니다. 서버 과부하로 업로드 오류가 반복되며 데이터가 유실될 수 있습니다.</p>
+          <ul class="detail-list">
+            <li><b>업로드 시기:</b> 접수 기간 시작 2~3일차 (마감일 절대 금지)</li>
+            <li><b>재무제표:</b> 시스템 내 직접 입력 항목 → 데이터 미리 준비</li>
+            <li><b>파일 업로드:</b> 한 개씩 업로드 방식 → 파일 목록 순서 미리 정리</li>
+            <li><b>오류 발생 시:</b> 임의 재시도 전 건보 콜센터 문의</li>
+            <li><b>완료 후:</b> 접수 번호 및 결과 화면 캡처 저장</li>
+          </ul>
+          <div class="warn-box">
+            <span class="warn-box-icon">⚠️</span>
+            건보 시스템 로그인 상태는 일정 시간 후 자동 만료됩니다. 장시간 작업 시 주기적으로 저장하세요.
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-card-header">
+          <div class="detail-card-icon" style="background:#ecfdf5;">📦</div>
+          <div class="detail-card-header-text">
+            <div class="detail-card-step">신규 제품 전용</div>
+            <div class="detail-card-title">신규 제품 사전 세팅 가이드</div>
+          </div>
+        </div>
+        <div class="detail-card-body">
+          <p>기존 제품은 이전 기준을 준용하면 되지만, 신규 제품은 아래 항목을 반드시 사전에 확정해야 합니다.</p>
+          <ul class="detail-list">
+            <li><b>제품 구성 기준:</b> 1세트 = 팬티 몇 개 + 패드 몇 개? 공식 지침 확인</li>
+            <li><b>포장 기준:</b> 박스 사이즈, 재질, 표시 사항 (지침 기준으로 확정)</li>
+            <li><b>가격 구조:</b> 신규 제품이므로 시장 조사부터 시작</li>
+            <li><b>촬영 기준:</b> 신규 공정이므로 지침 전체 재확인</li>
+            <li><b>서류 양식:</b> 최신 버전 확인 (변경 사항 이슈 리스트 작성)</li>
+          </ul>
+          <div class="warn-box">
+            <span class="warn-box-icon">⚠️</span>
+            기존 제품 기준을 그대로 적용하지 마세요. 신규 제품은 지침을 처음부터 새로 확인해야 합니다.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="checklist-section" id="checklist">
+  <div class="container">
+    <p class="section-label">Interactive Checklist</p>
+    <h2 class="section-title">단계별 실행 체크리스트</h2>
+    <p class="section-sub">각 항목을 클릭하여 완료 여부를 표시하세요. 상태는 브라우저를 닫으면 초기화됩니다.</p>
+
+    <div class="checklist-grid">
+
+      <div class="checklist-group">
+        <div class="checklist-group-header" style="background:#fffbeb; color:#92400e;">
+          📌 Phase 1 · 사전 준비 (D-90 이전)
+        </div>
+        <div class="checklist-group-body" id="cl-1">
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">협회 고시·기준 지침·단체 표준 최신 버전 확인</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">제품 구성 기준 확정 (1세트 구성품 수량)</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">포장 기준 확정 (박스 사이즈·재질)</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">촬영 지침 내용 파악 및 내부 공지</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">목표 판매가격 설정 및 원가 구조 시뮬레이션 완료</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">접수 예정일 기준 타임라인(역산) 수립</div></div>
+        </div>
+        <div style="padding: 0 20px 14px;">
+          <div class="checklist-progress"><div class="checklist-progress-bar" id="pb-1" style="width:0%"></div></div>
+          <div class="checklist-count" id="cc-1">0 / 6 완료</div>
+        </div>
+      </div>
+
+      <div class="checklist-group">
+        <div class="checklist-group-header" style="background:#eff6ff; color:#1e40af;">
+          📦 Phase 2 · 서류 준비 (D-60~30)
+        </div>
+        <div class="checklist-group-body" id="cl-2">
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">자재 단가 상위 5개 비교 견적 (3개 업체) 확보</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">외주 가공비 비교 견적 (3개 업체) 확보</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">자재별 거래명세서·세금계산서 수령</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">자재별 사진 촬영 완료</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">외주 가공비 세금계산서·거래명세서 수령</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">공급계약서 작성 및 날인 완료</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">접수 예정 2개월 전 판매 실적 완료 및 내역 정리</div></div>
+        </div>
+        <div style="padding: 0 20px 14px;">
+          <div class="checklist-progress"><div class="checklist-progress-bar" id="pb-2" style="width:0%"></div></div>
+          <div class="checklist-count" id="cc-2">0 / 7 완료</div>
+        </div>
+      </div>
+
+      <div class="checklist-group">
+        <div class="checklist-group-header" style="background:#f0fdf4; color:#14532d;">
+          🔧 Phase 3 · 서류 작성 (D-30~14)
+        </div>
+        <div class="checklist-group-body" id="cl-3">
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">제품 샘플 완성 및 사양 실측 확인</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">제품 설명서 최종 확정</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">제조 공정도 작성 및 공정별 시간 정의</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">공정 동영상 촬영 완료 (지침 준수 확인)</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">홈택스 PDF → 엑셀 변환 및 재무 자료 입력</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">자재 현황표 전체 입력 완료</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">건보 엑셀 양식 전체 입력 완료</div></div>
+        </div>
+        <div style="padding: 0 20px 14px;">
+          <div class="checklist-progress"><div class="checklist-progress-bar" id="pb-3" style="width:0%"></div></div>
+          <div class="checklist-count" id="cc-3">0 / 7 완료</div>
+        </div>
+      </div>
+
+      <div class="checklist-group">
+        <div class="checklist-group-header" style="background:#fff1f2; color:#9f1239;">
+          ✅ Phase 4 · 최종 점검 및 접수 (D-14~접수)
+        </div>
+        <div class="checklist-group-body" id="cl-4">
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">전체 서류 내부 크로스 체크 완료 (D-14)</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">지침 변경 사항 반영 여부 최종 확인</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">입력 데이터 원본 대조 검증 완료</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">보완 사항 수정 완료 및 동결 (D-7)</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">건보 온라인 업로드 완료 (D+2~3일차)</div></div>
+          <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-label">접수 번호 및 결과 화면 캡처 저장</div></div>
+        </div>
+        <div style="padding: 0 20px 14px;">
+          <div class="checklist-progress"><div class="checklist-progress-bar" id="pb-4" style="width:0%"></div></div>
+          <div class="checklist-count" id="cc-4">0 / 6 완료</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PITFALLS -->
+<section class="pitfalls-section" id="pitfalls">
+  <div class="container">
+    <p class="section-label">Lessons Learned</p>
+    <h2 class="section-title">실제 실패 사례와 개선 방법</h2>
+    <p class="section-sub">이번 업무를 통해 직접 경험한 실패 사례를 기록합니다. 같은 실수를 반복하지 않기 위한 기록입니다.</p>
+
+    <div class="pitfalls-grid">
+
+      <div class="pitfall-card bad">
+        <div class="pitfall-label">❌ 실패 사례 01</div>
+        <div class="pitfall-title">지침 없이 추정으로 시작</div>
+        <div class="pitfall-desc">요실금 팬티 구성을 시중 제품 기준으로 추정해 진행. 나중에 정부 기준과 달라 전체 구성·가격·서류 전면 재작업.</div>
+      </div>
+      <div class="pitfall-card good">
+        <div class="pitfall-label">✅ 개선 방법</div>
+        <div class="pitfall-title">지침 먼저, 추정 금지</div>
+        <div class="pitfall-desc">시작 전 협회 고시·건보 기준 지침을 직접 확인하고 제품 구성 기준을 명확히 확정한 후 업무 시작.</div>
+      </div>
+
+      <div class="pitfall-card bad">
+        <div class="pitfall-label">❌ 실패 사례 02</div>
+        <div class="pitfall-title">외주 가공비 누락</div>
+        <div class="pitfall-desc">고관절 보호대 패드 외주 생산 시 가공비 증빙 서류 및 비교 견적 모두 누락. 사후에 추가 준비하면서 전체 일정 지연.</div>
+      </div>
+      <div class="pitfall-card good">
+        <div class="pitfall-label">✅ 개선 방법</div>
+        <div class="pitfall-title">외주 체크리스트 사전 확인</div>
+        <div class="pitfall-desc">외주 발주 시점에 가공비 세금계산서, 거래명세서, 비교 견적서 3종을 체크리스트로 관리하여 누락 방지.</div>
+      </div>
+
+      <div class="pitfall-card bad">
+        <div class="pitfall-label">❌ 실패 사례 03</div>
+        <div class="pitfall-title">가격 책정 없이 계산서 발행</div>
+        <div class="pitfall-desc">판매가를 확정하지 않은 상태로 계산서 먼저 발행. 나중에 가격 조정으로 계산서 재발행, 공정 시간 재조정 반복.</div>
+      </div>
+      <div class="pitfall-card good">
+        <div class="pitfall-label">✅ 개선 방법</div>
+        <div class="pitfall-title">가격 책정이 1번</div>
+        <div class="pitfall-desc">업무 시작 첫 번째 단계로 목표 가격 확정 → 원가 시뮬레이션 → 계산서 발행 순서를 원칙으로 고정.</div>
+      </div>
+
+      <div class="pitfall-card bad">
+        <div class="pitfall-label">❌ 실패 사례 04</div>
+        <div class="pitfall-title">공정 영상 촬영 지침 미숙지</div>
+        <div class="pitfall-desc">시계 없이, 카메라 이동하며 촬영. 기준 미준수로 재촬영 가능성 발생. 작업자도 왜 찍어야 하는지 이해 못한 상태.</div>
+      </div>
+      <div class="pitfall-card good">
+        <div class="pitfall-label">✅ 개선 방법</div>
+        <div class="pitfall-title">촬영 전 지침 공유 및 확인</div>
+        <div class="pitfall-desc">촬영 전날 지침 내용을 담당자·작업자 모두에게 공유. 촬영 후 즉시 확인하여 재촬영 여부 현장에서 판단.</div>
+      </div>
+
+      <div class="pitfall-card bad">
+        <div class="pitfall-label">❌ 실패 사례 05</div>
+        <div class="pitfall-title">마감일 온라인 업로드</div>
+        <div class="pitfall-desc">접수 마감일 업로드 시도 → 서버 과부하로 오류 반복 → 건보 통화 → 필수 서류만 우선 제출 안내 받음.</div>
+      </div>
+      <div class="pitfall-card good">
+        <div class="pitfall-label">✅ 개선 방법</div>
+        <div class="pitfall-title">접수 2~3일차 업로드 원칙</div>
+        <div class="pitfall-desc">모든 서류를 D-14까지 완료 → 크로스 체크 → 접수 시작 2~3일차에 업로드. 마감일 업로드는 절대 금지.</div>
+      </div>
+
+      <div class="pitfall-card bad">
+        <div class="pitfall-label">❌ 실패 사례 06</div>
+        <div class="pitfall-title">자재 사양 사후 확인</div>
+        <div class="pitfall-desc">자재 현황표 작성 중 재질·사양 모르는 항목이 발생 → 업체 전화 확인 → 실물 측정 반복으로 작업 흐름 끊김.</div>
+      </div>
+      <div class="pitfall-card good">
+        <div class="pitfall-label">✅ 개선 방법</div>
+        <div class="pitfall-title">발주 시 사양 포함 명세서 요청</div>
+        <div class="pitfall-desc">자재 발주 시점에 업체에 재질·규격·사이즈·사진 포함 명세서를 요청하는 것을 발주 룰로 확정.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <b>DR Company</b> · 복지용구 신규급여결정신청 업무 매뉴얼<br>
+    2026년 3월 실제 업무 경험 기반 작성 · 적용 범위: 신규급여결정신청 · 제품심사 · 공장심사<br>
+    <span style="color:rgba(255,255,255,0.3); font-size:12px; margin-top:8px; display:block;">내용 변경 시 최신 버전으로 업데이트 후 노션에 재등록하세요.</span>
+  </div>
+</footer>
+
+<script>
+// accordion toggle
+function toggleDetail(row) {
+  const body = row.querySelector('.accordion-body');
+  if (!body) return;
+  body.classList.toggle('open');
+}
+
+// checklist
+function toggleCheck(item) {
+  item.classList.toggle('checked');
+  const group = item.closest('.checklist-group-body');
+  const groupId = group.id.replace('cl-', '');
+  updateProgress(groupId);
+}
+
+function updateProgress(id) {
+  const group = document.getElementById('cl-' + id);
+  const items = group.querySelectorAll('.checklist-item');
+  const checked = group.querySelectorAll('.checklist-item.checked');
+  const total = items.length;
+  const done = checked.length;
+  const pct = total > 0 ? (done / total * 100) : 0;
+
+  document.getElementById('pb-' + id).style.width = pct + '%';
+  document.getElementById('cc-' + id).textContent = done + ' / ' + total + ' 완료';
+}
+
+// init
+[1,2,3,4].forEach(id => updateProgress(id));
+
+// smooth reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = 1;
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.05 });
+
+document.querySelectorAll('.rule-card, .detail-card, .checklist-group').forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
+Gemini
+파일에 관해 물어보세요.
+Summarize this folder
+Analyze each file In this folder analyze each file
+What can Gemini do with folders in Google Drive, what can Gemini do with folders
+Workspace의 Gemini 기능은 실수할 수 있습니다. 자세히 알아보기
